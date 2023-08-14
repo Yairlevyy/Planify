@@ -93,12 +93,21 @@ body  {
     color: white;
 }
 
+#doing .subkanban_title h1 {
+    background-color: hsla(39, 100%, 68%, 1);
+}
+
+#done .subkanban_title h1 {
+    background-color: hsla(180, 51.4%, 51.6%, 1);
+}
+
+
 #kanban_grid {
-    width: 90%;
+    width: 75%;
     height: 65%;
     display: grid;
     grid-template-columns: repeat(3,1fr);
-    grid-gap: 10px;
+    grid-gap: 13px;
 }
 
 .sub_kanban_grid {
