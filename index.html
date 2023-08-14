@@ -6,47 +6,47 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <div id="home">
+    <div id="home" style="display: none;">
         <img src="Assets/home.png" alt="home" width="250px">
         <h1>Planify</h1>
         <h2>Get your project done !</h2>
         <button>Create a Project</button>
     </div>
 
-    <div id="onboarding" style="display: none;">
+    <div id="onboarding">
         <div class="header">
             <h1 class="header_title">Planify</h1>
         </div>
-        <div class="step_one">
-            <label for="project_title">Describe your project !</label>
-            <input type="text" name="project_title" id="project_title">
-            <textarea name="project_description" id="project_description" cols="30" rows="10" placeholder="Type here..."></textarea>
+        <div class="step_one sub_onboard" style="display: none;">
+            <label for="project_title">Describe your project</label>
+            <input type="text" name="project_title" id="project_title" placeholder="Development of a Shopify Store">
+            <textarea name="project_description" id="project_description" cols="30" rows="8" placeholder="Building an e-commerce store for a watch brand, the market will be US/UK/FR."></textarea>
             <div class="onboarding_btn">
                 <button>Next</button>
             </div>
         </div>
-        <div class="step_two">
+        <div class="step_two sub_onboard" style="display: none;">
             <label for="task_one_title">Task #1</label>
-            <input type="text" name="task_one_title" id="task_one_title">
-            <textarea name="task_one_descript" id="task_one_descript" cols="30" rows="10" placeholder="Type here..."></textarea>
+            <input type="text" name="task_one_title" id="task_one_title" placeholder="Title of Task #1">
+            <textarea name="task_one_descript" id="task_one_descript" cols="30" rows="8" placeholder="Description of Task #1"></textarea>
             <div class="onboarding_btn">
                 <button>Previous</button>
                 <button>Next</button>
             </div>
         </div>
-        <div class="step_three">
+        <div class="step_three sub_onboard" style="display: none;">
             <label for="task_two_title">Task #2</label>
-            <input type="text" name="task_two_title" id="task_two_title">
-            <textarea name="task_two_descript" id="task_two_descript" cols="30" rows="10" placeholder="Type here..."></textarea>
+            <input type="text" name="task_two_title" id="task_two_title" placeholder="Title of Task #2">
+            <textarea name="task_two_descript" id="task_two_descript" cols="30" rows="8" placeholder="Description of Task #2"></textarea>
             <div class="onboarding_btn">
                 <button>Previous</button>
                 <button>Next</button>
             </div>
         </div>
-        <div class="step_four">
+        <div class="step_four sub_onboard">
             <label for="task_three_title">Task #3</label>
-            <input type="text" name="task_three_title" id="task_three_title">
-            <textarea name="task_three_descript" id="task_three_descript" cols="30" rows="10" placeholder="Type here..."></textarea>
+            <input type="text" name="task_three_title" id="task_three_title" placeholder="Title of Task #3">
+            <textarea name="task_three_descript" id="task_three_descript" cols="30" rows="8" placeholder="Description of Task #3"></textarea>
             <div class="onboarding_btn">
                 <button>Planify</button>
             </div>

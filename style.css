@@ -15,6 +15,7 @@ body  {
     background-image: linear-gradient(160deg, #0093E9 0%, #80D0C7 100%);
     border-radius: 25px;
     color: white;
+    position: relative;
 }
 
 #home h1 {
@@ -32,6 +33,48 @@ body  {
     border: none;
     padding: 15px;
     font-size: 15px;
+    border-radius: 10px;
+    font-weight: bold;
+    background-color: #0093E9;
+    color: white;
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+}
+
+.header {
+    position: absolute;
+    top: 15px;
+    margin-bottom: 10px;
+}
+
+.sub_onboard {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    color: #004771;
+    font-weight: bold;
+    background-color: white;
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+    min-width: 30%;
+}
+
+.sub_onboard input, .sub_onboard textarea {
+    width: 100%;
+    border: none;
+    box-shadow: rgba(0, 0, 0, 0.02) 0px 1px 3px 0px, rgba(27, 31, 35, 0.15) 0px 0px 0px 1px;
+    border-radius: 5px;
+    padding: 10px;
+    margin: 10px 0px;
+    font-family: 'Poppins', sans-serif;
+    color: #004771;
+}
+
+.onboarding_btn button {
+    border: none;
+    padding: 10px;
+    font-size: 13px;
     border-radius: 10px;
     font-weight: bold;
     background-color: #0093E9;
