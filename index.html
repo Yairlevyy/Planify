@@ -1,0 +1,83 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Planify</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="home">
+        <h1>Planify</h1>
+        <h2>Get your project done !</h2>
+        <button>Create a Project</button>
+    </div>
+
+    <div id="onboarding">
+        <div class="header">
+            <h1 class="header_title">Planify</h1>
+        </div>
+        <div class="step_one">
+            <label for="project_title">Describe your project !</label>
+            <input type="text" name="project_title" id="project_title">
+            <textarea name="project_description" id="project_description" cols="30" rows="10" placeholder="Type here..."></textarea>
+            <div class="onboarding_btn">
+                <button>Next</button>
+            </div>
+        </div>
+        <div class="step_two">
+            <label for="task_one_title">Task #1</label>
+            <input type="text" name="task_one_title" id="task_one_title">
+            <textarea name="task_one_descript" id="task_one_descript" cols="30" rows="10" placeholder="Type here..."></textarea>
+            <div class="onboarding_btn">
+                <button>Previous</button>
+                <button>Next</button>
+            </div>
+        </div>
+        <div class="step_three">
+            <label for="task_two_title">Task #2</label>
+            <input type="text" name="task_two_title" id="task_two_title">
+            <textarea name="task_two_descript" id="task_two_descript" cols="30" rows="10" placeholder="Type here..."></textarea>
+            <div class="onboarding_btn">
+                <button>Previous</button>
+                <button>Next</button>
+            </div>
+        </div>
+        <div class="step_four">
+            <label for="task_three_title">Task #3</label>
+            <input type="text" name="task_three_title" id="task_three_title">
+            <textarea name="task_three_descript" id="task_three_descript" cols="30" rows="10" placeholder="Type here..."></textarea>
+            <div class="onboarding_btn">
+                <button>Planify</button>
+            </div>
+        </div>
+    </div>
+
+    <div id="kanban">
+        <div id="todo">
+            <div class="subkanban_title">
+                <h1>TO DO</h1>
+            </div>
+
+            <div class="project_details">
+
+            </div>
+
+        </div>
+        <div id="doing">
+            <div class="subkanban_title">
+                <h1>DOING</h1>
+            </div>
+
+
+        </div>
+        <div id="done">
+            <div class="subkanban_title">
+                <h1>DONE</h1>
+            </div>
+
+            
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
