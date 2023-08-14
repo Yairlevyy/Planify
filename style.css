@@ -3,7 +3,7 @@
 body  {
     font-family: 'Poppins', sans-serif;
 }
-#home, #onboarding {
+#home, #onboarding, #kanban {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -80,4 +80,51 @@ body  {
     background-color: #0093E9;
     color: white;
     box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+}
+
+.project_title_kanban h1 {
+    font-size: 25px;
+    margin-top: 35px;
+}
+
+.subkanban_title h1 {
+    font-size: 20px;
+    background-color: #0093E9;
+    color: white;
+}
+
+#kanban_grid {
+    width: 90%;
+    height: 65%;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-gap: 10px;
+}
+
+.sub_kanban_grid {
+    background-color: rgba(239, 234, 234, 0.8);
+    color: #004771;
+    border-radius: 10px;
+    /* overflow: auto; */
+}
+
+.task {
+    color: #0093E9;
+    background-color: white;
+    margin: 10px;
+    border-radius: 10px;
+}
+
+.task h2 {
+    font-size: 15px;
+    padding: 5px;
+    color: white;
+    background-color: #0093E9;
+}
+
+.task p {
+    font-size: 12px;
+    text-align: justify;
+    padding: 5px;
+    padding-top: 0;
 }

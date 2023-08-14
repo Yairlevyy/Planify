@@ -13,11 +13,11 @@
         <button>Create a Project</button>
     </div>
 
-    <div id="onboarding">
+    <div id="onboarding" style="display: none;">
         <div class="header">
             <h1 class="header_title">Planify</h1>
         </div>
-        <div class="step_one sub_onboard" style="display: none;">
+        <div class="step_one sub_onboard">
             <label for="project_title">Describe your project</label>
             <input type="text" name="project_title" id="project_title" placeholder="Development of a Shopify Store">
             <textarea name="project_description" id="project_description" cols="30" rows="8" placeholder="Building an e-commerce store for a watch brand, the market will be US/UK/FR."></textarea>
@@ -43,7 +43,7 @@
                 <button>Next</button>
             </div>
         </div>
-        <div class="step_four sub_onboard">
+        <div class="step_four sub_onboard" style="display: none;">
             <label for="task_three_title">Task #3</label>
             <input type="text" name="task_three_title" id="task_three_title" placeholder="Title of Task #3">
             <textarea name="task_three_descript" id="task_three_descript" cols="30" rows="8" placeholder="Description of Task #3"></textarea>
@@ -53,30 +53,57 @@
         </div>
     </div>
 
-    <div id="kanban" style="display: none;">
-        <div id="todo">
+    <div id="kanban">
+        <div class="header">
+            <h1 class="header_title">Planify</h1>
+        </div>
+
+        <div class="project_title_kanban">
+            <h1>Development of a Shopify E-Commerce store</h1>
+        </div>
+
+        <div id="kanban_grid">
+
+        <div id="todo" class="sub_kanban_grid">
             <div class="subkanban_title">
                 <h1>TO DO</h1>
             </div>
 
             <div class="project_details">
-
+                <div class="task" id="task_one_display">
+                    <h2>Create Shopify Account</h2>
+                    <p>Créer un compte gmail dédié, puis inscription sur shopify.com et envoi des identifiants aux clients. </p>
+                </div>
+                <div class="task" id="task_two_display">
+                    <h2>Create Shopify Account</h2>
+                    <p>Créer un compte gmail dédié, puis inscription sur shopify.com et envoi des identifiants aux clients. </p>
+                </div>
+                <div class="task" id="task_three_display">
+                    <h2>Create Shopify Account</h2>
+                    <p>Créer un compte gmail dédié, puis inscription sur shopify.com et envoi des identifiants aux clients. </p>
+                </div>
             </div>
 
         </div>
-        <div id="doing">
+        <div id="doing" class="sub_kanban_grid">
             <div class="subkanban_title">
                 <h1>DOING</h1>
             </div>
 
-
+            <div class="project_details">
+            
+            </div>
         </div>
-        <div id="done">
+        <div id="done" class="sub_kanban_grid">
             <div class="subkanban_title">
                 <h1>DONE</h1>
             </div>
 
+            <div class="project_details">
             
+            </div>
+        </div>
+
         </div>
     </div>
     <script src="script.js"></script>
