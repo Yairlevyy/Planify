@@ -6,11 +6,11 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <div id="home" style="display: none;">
+    <div id="home">
         <img src="Assets/home.png" alt="home" width="250px">
         <h1>Planify</h1>
         <h2>Get your project done !</h2>
-        <button>Create a Project</button>
+        <button onclick="displayNextContainer(event)">Create a Project</button>
     </div>
 
     <div id="onboarding" style="display: none;">
@@ -22,7 +22,7 @@
             <input type="text" name="project_title" id="project_title" placeholder="Development of a Shopify Store">
             <textarea name="project_description" id="project_description" cols="30" rows="8" placeholder="Building an e-commerce store for a watch brand, the market will be US/UK/FR."></textarea>
             <div class="onboarding_btn">
-                <button>Next</button>
+                <button onclick="displayNextSubContainer(event)">Next</button>
             </div>
         </div>
         <div class="step_two sub_onboard" style="display: none;">
@@ -30,8 +30,8 @@
             <input type="text" name="task_one_title" id="task_one_title" placeholder="Title of Task #1">
             <textarea name="task_one_descript" id="task_one_descript" cols="30" rows="8" placeholder="Description of Task #1"></textarea>
             <div class="onboarding_btn">
-                <button>Previous</button>
-                <button>Next</button>
+                <button onclick="displayPreviousSubContainer(event)">Previous</button>
+                <button onclick="displayNextSubContainer(event)">Next</button>
             </div>
         </div>
         <div class="step_three sub_onboard" style="display: none;">
@@ -39,8 +39,8 @@
             <input type="text" name="task_two_title" id="task_two_title" placeholder="Title of Task #2">
             <textarea name="task_two_descript" id="task_two_descript" cols="30" rows="8" placeholder="Description of Task #2"></textarea>
             <div class="onboarding_btn">
-                <button>Previous</button>
-                <button>Next</button>
+                <button onclick="displayPreviousSubContainer(event)">Previous</button>
+                <button onclick="displayNextSubContainer(event)">Next</button>
             </div>
         </div>
         <div class="step_four sub_onboard" style="display: none;">
@@ -48,12 +48,13 @@
             <input type="text" name="task_three_title" id="task_three_title" placeholder="Title of Task #3">
             <textarea name="task_three_descript" id="task_three_descript" cols="30" rows="8" placeholder="Description of Task #3"></textarea>
             <div class="onboarding_btn">
-                <button>Planify</button>
+                <button onclick="displayPreviousSubContainer(event)">Previous</button>
+                <button onclick="displayKanban()">Planify</button>
             </div>
         </div>
     </div>
 
-    <div id="kanban">
+    <div id="kanban" style="display: none;">
         <div class="header">
             <h1 class="header_title">Planify</h1>
         </div>
@@ -113,12 +114,12 @@
                 <textarea name="new_task_descript" id="new_task_descript" cols="30" rows="8"
                     placeholder="Description of the new Task"></textarea>
                 <div class="onboarding_btn">
-                    <button>Planify</button>
+                    <button onclick="unDisplayAddTask()">Planify</button>
                 </div>
             </div>
         </div>
 
-        <div id="btn-add" style="display: none;">
+        <div id="btn-add" onclick="displayAddTask()">
             +
         </div>
     </div>
