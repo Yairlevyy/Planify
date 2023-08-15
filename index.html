@@ -60,7 +60,7 @@
         </div>
 
         <div class="project_title_kanban">
-            <h1>Development of a Shopify E-Commerce store</h1>
+            <!-- <h1></h1> -->
         </div>
 
         <div id="kanban_grid">
@@ -70,19 +70,15 @@
                 <h1>TO DO</h1>
             </div>
 
-            <div class="project_details">
-                <div class="task" id="task_one_display">
-                    <h2>Create Shopify Account</h2>
-                    <p>Créer un compte gmail dédié, puis inscription sur shopify.com et envoi des identifiants aux clients. </p>
-                </div>
-                <div class="task" id="task_two_display">
-                    <h2>Create Shopify Account</h2>
-                    <p>Créer un compte gmail dédié, puis inscription sur shopify.com et envoi des identifiants aux clients. </p>
-                </div>
-                <div class="task" id="task_three_display">
-                    <h2>Create Shopify Account</h2>
-                    <p>Créer un compte gmail dédié, puis inscription sur shopify.com et envoi des identifiants aux clients. </p>
-                </div>
+            <div class="project_details" id="project_details_todo"
+            ondragover="onDragOverProjectDetails(event)"
+            ondrop="onDropOverProjectDetails(event)"
+            style="min-height: 80%;"
+            >
+                <!-- <div class="task" id="task_one_display">
+                    <h2></h2>
+                    <p></p>
+                </div> -->
             </div>
 
         </div>
@@ -91,7 +87,11 @@
                 <h1>DOING</h1>
             </div>
 
-            <div class="project_details">
+            <div class="project_details" id="project_details_doing"
+            ondragover="onDragOverProjectDetails(event)"
+            ondrop="onDropOverProjectDetails(event)"
+            style="min-height: 80%;"
+            >
             
             </div>
         </div>
@@ -100,7 +100,11 @@
                 <h1>DONE</h1>
             </div>
 
-            <div class="project_details">
+            <div class="project_details" id="project_details_done"
+            ondragover="onDragOverProjectDetails(event)"
+            ondrop="onDropOverProjectDetails(event)"
+            style="min-height: 80%;"
+            >
             
             </div>
         </div>
