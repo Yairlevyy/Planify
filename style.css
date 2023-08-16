@@ -2,7 +2,6 @@
 
 body  {
     font-family: 'Poppins', sans-serif;
-    padding: 10px;
 }
 #home, #onboarding, #kanban {
     display: flex;
@@ -123,6 +122,18 @@ body  {
     background-color: white;
     margin: 10px;
     border-radius: 10px;
+    position: relative;
+}
+
+.delete_task {
+    color: white;
+    background-color: red;
+    position: absolute;
+    border-radius: 100%;
+    padding: 3px 8px;
+    font-size: 10px;
+    bottom: -8px;
+    right: -5px;
 }
 
 .task h2 {

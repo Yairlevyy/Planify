@@ -78,6 +78,13 @@ function displayTask(title,descript) {
     const p = document.createElement('p');
     p.innerHTML = descript;
     div.appendChild(p);
+    const div_delete = document.createElement('div');
+    div_delete.innerHTML = 'X';
+    div_delete.classList.add('delete_task')
+    div.appendChild(div_delete)
+    div_delete.addEventListener('click',function(event){
+        event.target.parentNode.remove()
+    });
     project_details_todo.appendChild(div)
 };
 
@@ -127,4 +134,10 @@ function unDisplayAddTask() {
 
     container_add_task.style.display = 'none'
 };
+
+// Delete a Task
+
+function deleteTask(e) {
+    e.target.parentNode.remove();
+}
 

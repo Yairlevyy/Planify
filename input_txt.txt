@@ -1,0 +1,19 @@
+Development of a Shopify Store
+
+Building an e-commerce store for a watch brand, the market will be US/UK/FR.
+
+Setup Identifiers
+
+Creation of a dedicated email address + a Shopify account associated with this address.
+
+Design Process
+
+Choose three different themes and propose them to the clients to pick one.
+
+Personalization
+
+With all the images + texts the customer provides, customize the store and adapt the color theme.
+
+Beta Testing
+
+Perform several test orders of different products to ensure proper functioning.
