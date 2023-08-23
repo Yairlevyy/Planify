@@ -1,0 +1,9 @@
+Yair Levy: TODO
+Project Structure:8/10
+HTML Structure:7/10
+CSS and Design: 8/10
+JS and DOM: 9/10
+Clarity: 7/10
+score: 8
+Really beautiful Design and functionality. Simple and direct. 
+The project structure is really good and the code is clean and organized, making it easy to follow.
